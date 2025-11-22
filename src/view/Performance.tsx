@@ -61,7 +61,7 @@ function Performance() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-200">
-      <div className="h-[634px] w-[718px] rounded-lg bg-white border shadow-lg">
+      <div className="h-[634px] w-[718px] rounded-lg bg-white border-1 shadow-lg">
         {/* Title */}
         <h1
           className="pt-[20px] pl-[40px] text-[24px] font-[500]"
@@ -109,6 +109,7 @@ function Performance() {
                         fill={slice.color}
                         stroke="#FFFFFF"
                         strokeWidth={3}
+                         style={{ outline: "none" }} 
                       />
                     </Pie>
                   );
